@@ -12,12 +12,16 @@
 #  #   url: /sitemap/
 
 
-    main:
-      - title: "Posts"
-        url: /posts/
-      - title: "Categories"
-        url: /categories/
-      - title: "Tags"
-        url: /tags/
-      - title: "About"
-        url: /about/
+main:
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+
+  - title: "Cheat Sheets"
+    url: /categories/cheatsheets
+
+#      - title: "About"
+#        url: /about/
