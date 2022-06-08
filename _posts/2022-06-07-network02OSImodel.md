@@ -18,7 +18,9 @@ tags:
 
 
 ![](https://nabi-yi.github.io/assets/images/220607_httpMessage.jpg){: .align-center}
+ ###### *출처 : Wikipedia*
 이러한 HTTP Message를
+
 ![](https://nabi-yi.github.io/assets/images/220607_physical.jpg){: .align-center}
 이렇게 디지털 신호로 변환하여 송수신한다.
 
