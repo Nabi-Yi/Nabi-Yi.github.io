@@ -18,7 +18,7 @@ tags:
 * 스프링 컨테이너는 내부에 존재하는 Application Bean의 **생성, 관리, 제거** (생명주기) 등을 담당한다.
 * **DI를 통해 빈을 연결하고, 객체간 의존 및 결합을 낮춰준다.(Loose Coupling)**
 * 스프링 내에선 ```ApplicationContext``` Interface로 있고, ```BeanFactory``` 및 여러 상위 인터페이스를 상속받아 사용한다.  
-```Java
+```java
 public interface ApplicationContext extends EnvironmentCapable, ListableBeanFactory, HierarchicalBeanFactory,
 		MessageSource, ApplicationEventPublisher, ResourcePatternResolver{...}
 ```
@@ -47,7 +47,7 @@ public interface ApplicationContext extends EnvironmentCapable, ListableBeanFact
  - ResourceLoader : 파일, CLASSPATH 등 리소스 조회
 
 사실상 ApplicationContext를 많이 사용. BeanFactory를 직접적으로 사용하는 경우는 잘 없음.  
-```JAVA
+```java
 ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 ```
 로 인스턴스화하여 제공된 위치경로 ResourceLoader등을 경유해 외부 리소스로 부터 메타데이터 로드 가능.  
