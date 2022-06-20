@@ -2,7 +2,7 @@
 title: "Spring AOP"
 
 categories:
-  - CheatSheet
+  - cheatsheets
 tags:
   - Spring
   - AOP
