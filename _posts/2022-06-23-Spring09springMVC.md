@@ -39,9 +39,6 @@ Frontend측에서 비동기 클라이언트를 만들 수 있다. 영역의 명�
 
 
 ### 참조 및 더 읽어볼 거리
-[Spring docs - IoC Container](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-basics)  
-
-Mock Data - 하드코딩된 test용 데이터?
 
 
 

@@ -75,7 +75,7 @@ static SingletonSerivce singletonService = ac.getBean("singletonService",Singlet
 ```
 와 같이 호출하여 사용 할 수 있다.  
 
-훨씬 간편하게 사용 할 수 있으나, 컨테이너를 사용하는  경우에도 Singleton 객체는 Stateless 해야하는데, 패턴 때와 마찬가지로 외부에서 객체 내부의 값을 변경하지 않고 읽기만 가능해야한다(공유 값이 없어야한다).  
+훨씬 간편하게 사용 할 수 있으나, 컨테이너를 사용하는  경우에도 **Singleton 객체는 Stateless 해야하는데, 패턴 때와 마찬가지로 외부에서 객체 내부의 값을 변경하지 않고 읽기만 가능해야한다.**(공유 값이 없어야한다).  
 
 공유 값이 있을 경우, static메모리 사용과 마찬가지 경우로 의도치 않은 오류가 발생 할 수 밖에 없다.  
 
