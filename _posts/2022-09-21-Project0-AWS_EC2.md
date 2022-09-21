@@ -14,7 +14,7 @@ tags:
 - EC2 자체에 대한 설명보다는 구축 방법, 진행순서 등을 위주로 글을 작성했다. EC2자체에 대한 설명은 [공식문서](https://docs.aws.amazon.com/ec2/)를 참고해보자.
 
 ### AWS IAM
-- 본격적으로 EC2를 이용하기 전에, 해야할 것이 있는데 IAM설정을 해줘야 한다. IAM계정은 ROOT계정이 아닌 ROOT계정에서 설정한 일부 서비스에만 접근 가능한 루트계정에 종속된 새끼계정으로 봐도 무방할 것 같다. 이러한 IAM계정을 이용하는 이유는 ROOT계정이 털릴 위험을 최소화하고, 특히 혼자가 아닌 팀이 하나의 ROOT계정 아래서 여러 서비스를 이용 할 때 각각에 맞는 IAM계정을 부여하고 사용함으로써 좀 더 안전하게 서비스를 이용하기 위함을 주 목적으로 생각한다. AWS측에서도 루트계정의 로그인은 최소화하고 대부분의 서비스는 IAM계정을 통해 이용하길 권장하고 있다.  
+- 본격적으로 EC2를 이용하기 전에, 해야할 것이 있는데 IAM설정을 해주고 IAM계정을 이용하는 것이 좋다. IAM계정은 ROOT계정이 아닌 ROOT계정에서 설정한 일부 서비스에만 접근 가능한 루트계정에 종속된 새끼계정으로 봐도 무방할 것 같다. 이러한 IAM계정을 이용하는 이유는 ROOT계정이 털릴 위험을 최소화하고, 특히 혼자가 아닌 팀이 하나의 ROOT계정 아래서 여러 서비스를 이용 할 때 각각에 맞는 IAM계정을 부여하고 사용함으로써 좀 더 안전하게 서비스를 이용하기 위함을 주 목적으로 생각한다. AWS측에서도 루트계정의 로그인은 최소화하고 대부분의 서비스는 IAM계정을 통해 이용하길 권장하고 있다.  
 
 1.먼저 AWS 가입 후, ROOT 계정으로 로그인한 뒤 상단의 IAM에서 IAM 서비스를 검색하자  
  ![image](https://user-images.githubusercontent.com/104179624/191491677-3db30ded-e10e-4481-8806-c2006be6d974.png)  
@@ -37,9 +37,14 @@ tags:
 11. 이 후 IAM계정으로 로그인하기 위해선 위 이미지의 https://{AWSIDNUMBER}/signin.aws.amazon.com/console 을 통해 로그인 할 수 있다.
 
 ### AWS EC2
-
-
-
+1. 
+![image](https://user-images.githubusercontent.com/104179624/191506865-cd512a68-89da-4220-bf7d-6f212fb20c98.png)
+2. 
+![image](https://user-images.githubusercontent.com/104179624/191507138-8d470955-a56e-4d6a-a73c-837f5c5c4640.png)
+3. 
+![image](https://user-images.githubusercontent.com/104179624/191507707-190d66ea-16fe-49cb-85fe-1ddce9bee553.png)
+4. 
+![image](https://user-images.githubusercontent.com/104179624/191507774-24768bd3-f076-4423-8611-ee9480656449.png)
 
 
 ### 참조 및 더 읽어볼 거리
